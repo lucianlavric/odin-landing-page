@@ -1,0 +1,11 @@
+body{
+    display: flex;
+    align-items: ;
+}
+
+.header{
+    background-color: #1f2937;
+    display: flex;
+    color: #f9faf8;
+    flex: 1;
+}

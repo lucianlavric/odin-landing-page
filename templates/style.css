@@ -11,7 +11,7 @@ body{
     margin: auto;
 }
 
-.header{
+.header, .footer{
     background-color: #1f2937;
     display: flex;
     color: #f9faf8;
@@ -19,32 +19,138 @@ body{
     flex: 1;
     align-items: center;
     justify-content: space-evenly;
-    
+}
 
+.header-text, .image, ul{
+    width: 400px;
 }
 
 ul{
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 24px;
     list-style: none;
+    box-sizing: border-box;
+    padding: 0;
     
 }
 
-a{
+a, .footer{
     font-size: 18px;
     color: #e5e7eb;
 }
 
 
 .middle{
+    display: flex;
     background-color: #1f2937;
+    justify-content: space-evenly;
+    padding: 48px 0;
+    align-items: center;
+    flex: 1;
+}
+
+.aligned-middle{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 12px;
+}
+
+button{
+    align-self: flex-start;
+    padding: 5px 24px;
+    border-radius: 5px;
+    border: none;
+}
+
+.info-header{
+    padding: 24px;
+}
+
+.rand-info{
+   /* gap: 24px;  */
+   justify-content: center;
+   gap: 96px;
+}
+
+.rand-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    border: 2px solid #3882f6;
+    border-radius: 25px;
+}
+
+.img-text{
+    width: 150px;
+    text-align: center;
+    padding-bottom: 96px;
+    padding-top: 5px;
+}
+
+.image{
+    background-color: #e5e7eb;
+    text-align: center;
+}
+
+.inspiring{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    background-color: #e5e7eb;
+    padding: 96px;
+}
+
+.quote-text{
+    display: flex;
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    width: 800px;
+}
+
+.quoted{
+    display: flex;
+    align-self: flex-end;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.call-to-action{
+    align-self: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 48px;
+    margin: 96px;
+    gap: 48px;
+}
+
+.cta-text{
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.cta-placeholder{
+    display: flex;
+    flex-direction: column;
 }
 
 .hero{
     color: #f9faf8;
     font-size: 48px;
     font-weight: 800;
+}
+
+.text{
+    font-size: 18px;
+    color: #e5e7eb;
 }
 
 .info-header{
@@ -56,15 +162,17 @@ a{
     align-items: center;
 }
 
-.inspiring{
-    background-color: #e5e7eb;
-}
-.quote-text, .quoted{
-    font-size: 36px;
-    font-weight: lighter;
-    font-style: italic;
-}
+
 button, .call-to-action{
     background-color: #3882f6;
+    color: #e5e7eb;
 }
 
+.cta-button{
+    border: 1px solid #f9faf8;
+    align-self: center;
+}
+
+.footer{
+    padding: 24px;
+}

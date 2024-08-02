@@ -1,11 +1,27 @@
 body{
     display: flex;
-    align-items: ;
+    
 }
 
 .header{
     background-color: #1f2937;
     display: flex;
     color: #f9faf8;
+    font-size: 24px;
     flex: 1;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    list-style: none
+}
+
+a{
+    font-size: 18px;
+    color: #e5e7eb;
 }
